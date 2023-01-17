@@ -9,11 +9,42 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
   
   <title>Frontend Mentor | Advice generator app</title>
 
 </head>
-<body>
+<body class="wrapper">
+
+
+  <main class="main">
+
+
+    <section class="advice-container">
+
+      <h1 class="advice-heading">Advice <span id="adviceHeading"></span></h1>
+      <div class="advice-content">
+        <p class="advice-text" id="adviceText">
+          “It is easy to sit up and take notice, what's difficult is getting up and taking action.”
+        </p>
+      </div>
+
+      <div class="advice-divider-container">
+        <img
+        src="/images/pattern-divider-mobile.svg"
+        srcset="/images/pattern-divider-desktop.svg"
+        sizes="(min-width: 900px)">
+      </div>
+
+      <button class="advice-button">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
+      </button>
+    </section>
+
+
+  </main>
+
+
 
 
 
