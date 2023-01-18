@@ -97,11 +97,15 @@ body {
 }
 .advice-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--dark-grayish-blue);
   box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
   border-radius: 10px;
-  max-width: max(300px, 540px);
+  max-width: max(343px, 540px);
   padding: 1rem;
+  min-height: clamp(312px, 50vw, 335px);
 }
 .advice-heading {
   color: var(--neon-green);
@@ -124,6 +128,8 @@ body {
 
 .advice-button {
   position: absolute;
+  display: grid;
+  place-items: center;
   cursor: pointer;
   border: none;
   border-radius: 50%;
@@ -131,7 +137,8 @@ body {
   background-color: var(--neon-green);
   padding: 0.8em;
   transition: all 300ms ease-in-out;
-
+  width: 4rem;
+  height: 4rem;
   right: 45%;
   bottom: -9%;
 }
@@ -140,5 +147,5 @@ body {
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: var(--step-11-13); text-align: center; }
+.attribution a { color:var(--light-cyan); }
